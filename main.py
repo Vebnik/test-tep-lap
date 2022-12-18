@@ -2,12 +2,15 @@ from src.Work import Work
 
 
 def main() -> None:
-    work = Work()
-    _sum = work.my_sum(23, 10.5)
+	work = Work(5, 10)
+	ar_sum = work.my_sum()
+    
+	print(ar_sum)
+	print(work)
 
-    print(_sum)
-
+	work_2 = Work(5, '10')
+	
 
 if __name__ == '__main__':
-    main()
+	main()
 
